@@ -1,9 +1,59 @@
+:root {
+    --primaty-color: #222831;
+    --branding-color: #0092ca;
+    --secondary-color: #393e46;
+    --accent-color: #eeeeee;
+    --heading-font-family: 'Fira Sans', sans-serif;
+    --default-font-family: 'PT Serif', serif;
+}
+
 body {
-    font-family: 'PT Serif', serif;
+    font-family: var(--default-font-family);
 }
 
 h1,
 h2,
-h3 {
-    font-family: 'Fira Sans', sans-serif;
+h3,
+h4,
+h5,
+h6 {
+    color: #eeeeee;
+    font-family: var(--heading-font-family);
+    font-weight: bolder;
+}
+
+p {
+    font-weight: normal;
+}
+
+.hero {
+    background: var(--primaty-color);
+    text-align: center;
+    color: var(--accent-color);
+    padding: 160px 10px;
+}
+
+.hero p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero h3 {
+    font-family: var(--default-font-family);
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.btn-branding {
+    background: var(--branding-color);
+    color: var(--accent-color);
+    border-radius: 4px;
+    line-height: 27px;
+    padding: 15px 30px;
 }
