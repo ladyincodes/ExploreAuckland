@@ -3,8 +3,8 @@
     --branding-color: #0092ca;
     --secondary-color: #393e46;
     --accent-color: #eeeeee;
-    --heading-font-family: 'Fira Sans', sans-serif;
-    --default-font-family: 'PT Serif', serif;
+    --heading-font-family: 'PT Serif', serif;
+    --default-font-family: 'Fira Sans', sans-serif;
 }
 
 body {
