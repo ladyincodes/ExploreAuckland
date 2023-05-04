@@ -17,13 +17,20 @@ h3,
 h4,
 h5,
 h6 {
-    color: #eeeeee;
+    color: var(--primaty-color);
     font-family: var(--heading-font-family);
     font-weight: bolder;
 }
 
+h2 {
+    font-size: 35px;
+}
+
 p {
+    color: var(--primaty-color);
     font-weight: normal;
+    font-size: 16px;
+    line-height: 1.9;
 }
 
 .hero {
@@ -37,10 +44,13 @@ p {
     font-size: 25px;
     font-weight: bold;
     margin: 0;
+    color: var(--accent-color);
 }
 
 .hero h1 {
     font-size: 60px;
+    color: var(--accent-color);
+    line-height: 1.5;
 }
 
 .hero h3 {
@@ -48,12 +58,66 @@ p {
     font-weight: normal;
     font-size: 20px;
     line-height: 2;
+    color: var(--accent-color);
 }
 
 .btn-branding {
     background: var(--branding-color);
+    font-size: 18px;
     color: var(--accent-color);
     border-radius: 4px;
     line-height: 27px;
     padding: 15px 30px;
+}
+
+.btn-branding-outline {
+    color: var(--branding-color);
+    border: 1px solid var(--branding-color);
+    font-size: 18px;
+    border-radius: 4px;
+    line-height: 27px;
+    padding: 15px 30px;
+}
+
+.project-description {
+    padding: 80px 40px 0px;
+}
+
+
+@media (max-width: 1200px) {
+    .project-description {
+        padding: 30px 20px 0;
+    }
+}
+
+@media (max-width: 992px) {
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .hero h3 {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .project-description {
+        padding: 0;
+        text-align: center;
+    }
 }
