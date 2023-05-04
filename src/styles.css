@@ -68,6 +68,13 @@ p {
     border-radius: 4px;
     line-height: 27px;
     padding: 15px 30px;
+    transition: all 200ms ease-in-out;
+}
+
+.btn-branding:hover {
+    background: var(--branding-color);
+    opacity: 0.8;
+    color: white;
 }
 
 .btn-branding-outline {
@@ -77,10 +84,18 @@ p {
     border-radius: 4px;
     line-height: 27px;
     padding: 15px 30px;
+    transition: all 200ms ease-in-out;
 }
 
 .project-description {
     padding: 80px 40px 0px;
+}
+
+.btn-branding-outline:hover {
+    color: var(--branding-color);
+    border-color: var(--branding-color);
+    font-size: 19px;
+    padding: 15px 27px;
 }
 
 
